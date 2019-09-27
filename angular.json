@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/app/left-menu/left-menu.component.css"
+              "src/styles.css"
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js"]
