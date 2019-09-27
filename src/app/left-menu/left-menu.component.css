@@ -45,7 +45,7 @@ header{
     transition: .1s;
   }
 .button-open .sable_middle {
-    transform: translate(430px);
+    transform: translate(230px);
     transition: 0.1s ease-out;
     opacity: 0;
   }
