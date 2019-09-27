@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { RightMenuComponent } from './right-menu/right-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftMenuComponent
+    LeftMenuComponent,
+    RightMenuComponent
   ],
   imports: [
     BrowserModule

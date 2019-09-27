@@ -1,40 +1,110 @@
-#sable-menu{
+#sable{
     width: 60px;
     height: 60px;
     display: block;
-    transform: rotateZ(226deg);
+    transition: .5s;
+    z-index: 15;
 }
 .sable_top{
     display: block;
     position: relative;
     padding: 0; 
     top:0;
+    transform: rotateZ(226deg);
 }
 .sable_middle{
     display: block;
     position: relative; 
     padding: 0; 
     bottom: 42px;
+    transform: rotateZ(226deg);
 }
 .sable_bottom{
     display: block;
     padding: 0; 
     position: relative; 
     bottom: 83px;
+    transform: rotateZ(226deg);
 }
 header{
     margin-left: 1em;
     position: relative;
-    left: 0.5em;
+    left: 0.8em;
     top: 0;
     bottom: 0;
-    background: rgb(5, 169, 180);
     width:350px;
     height: 100vh;
 }
 .menu-sable{
     cursor: pointer;
-    background: rgb(187, 135, 135);
     width: 60px;
     height: 60px;
+}
+.button-open .sable_top {
+    transform: rotateZ(182deg)  translateX(0px) translateY(-5px);
+    transition: .1s;
+  }
+.button-open .sable_middle {
+    transform: translate(430px);
+    transition: 0.1s ease-out;
+    opacity: 0;
+  }
+ .button-open .sable_bottom {
+    transform: rotateZ(270deg) translateX(30px) translateY(0px);
+    transition: .1s;
+  }
+.menu-wrap {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 350px;
+    margin-left:-480px;
+    font-size: 2.5em;
+    transition: .25s;
+    background-color: rgba(104, 104, 104, 0.589);
+}
+.menu-sidebar{
+    top: 30px;
+    position: absolute;
+    margin-top: 140px;
+}
+.menu-sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 11px;
+}
+.menu-sidebar ul li{
+    display: block;
+    padding: 0.5px;
+    margin: 0;
+}
+.menu-sidebar ul li a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Star Jedi Rounded';
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu-show {
+    margin-left: 0;
+}
+.menu-sidebar ul li a:hover{
+    color: rgb(233, 233, 233);
+    transition: 0.5 ease;
+}
+.form-control{
+        margin: 110px 15px;
+    padding-bottom: 90px;
+}
+input{
+    height: 50px;
+    width: 325px;
+    color: #fff;
+    display: block;
+    font-family: 'Star Jedi Rounded';
+    font-size: 1.2em;
+    background: rgba(80, 80, 80, 0.733);
+    border-style: none;
 }
