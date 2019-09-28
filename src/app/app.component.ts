@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
           $clse_main.toggleClass('pull-left');
         })
     });
+    
   }
 }
 

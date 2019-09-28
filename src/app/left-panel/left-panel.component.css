@@ -1,9 +1,18 @@
 #sable{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     display: block;
     transition: .5s;
     z-index: 15;
+}
+.icon-galactic-empire{
+    position: relative;
+    left: 5.5em;
+    top: -2.2em;
+}
+.icon-galactic-empire img{
+    width: 65px;
+    height: 65px;
 }
 .sable_top{
     display: block;
@@ -41,7 +50,7 @@ header{
     height: 60px;
 }
 .button-open .sable_top {
-    transform: rotateZ(182deg)  translateX(0px) translateY(-5px);
+    transform: rotateZ(186deg)  translateX(-16px) translateY(-8px);
     transition: .1s;
   }
 .button-open .sable_middle {
@@ -50,7 +59,7 @@ header{
     opacity: 0;
   }
  .button-open .sable_bottom {
-    transform: rotateZ(270deg) translateX(30px) translateY(0px);
+    transform: rotateZ(270deg) translateX(35px) translateY(13px);
     transition: .1s;
   }
 .menu-wrap {

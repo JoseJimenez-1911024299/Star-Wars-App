@@ -4,5 +4,71 @@
 }
 .main{
     padding-left: 15px;
-    transition: 0.3s ease;  
+    transition: 0.3s ease;
+    width: 100%;  
+}
+.main img{
+    width: 540px;
+    height: 750px;
+}
+.carousel-control-prev{
+    position: absolute !important;
+    left: 0px;
+    top: -100px;
+    transition: 0.5s ease;
+}
+.carousel-control-prev img{
+    width: 160px;
+    height: 160px;
+}
+.prev-icon-1{
+    transform: rotateY(180deg) translateY(160px) translateX(161px);
+}
+.prev-icon-2{
+    transform: rotateZ(180deg) translateY(4px) translateX(320px);
+}
+
+.carousel-control-next{
+    position: absolute;
+    left: 1335px;
+    top: -100px;
+    transition: 0.5s ease;
+}
+
+.carousel-control-next img{
+    width: 160px;
+    height: 160px;
+}
+
+.next-icon-1{
+    transform: rotatex(180deg) translateY(0px) translateX(-80px);
+}
+.next-icon-2{
+    transform: rotateZ(360deg) translateY(165px) translateX(-240px);
+}
+
+
+.carousel-item{
+    overflow: visible !important;
+    display: flex !important;
+}
+
+.active{
+    width: 45% !important;
+    height: 550px;
+    transition: 0.5s ease;
+    border: 8.5px solid rgb(97, 97, 97) !important;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex img{
+    height: 410px;
+    width: 45% !important;
+    border: 8.5px solid rgb(255, 255, 255);
+    transition: 0.5s ease;
+    margin-left: 15px;
 }
