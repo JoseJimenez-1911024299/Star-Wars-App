@@ -28,7 +28,7 @@
 }
 header{
     margin-left: 1em;
-    position: relative;
+    position: absolute;
     left: 0.8em;
     top: 0;
     bottom: 0;

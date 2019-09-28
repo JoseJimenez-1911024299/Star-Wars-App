@@ -14,11 +14,13 @@ export class AppComponent implements OnInit {
   {
     $(document).ready(function(){
       var $toggle  = $('.menu-sable'),
-      $menuWrap = $('.menu-wrap');;
+      $menuWrap = $('.menu-wrap'),
+      $clse_main     = $('.main');
 
       $toggle.on('click',function(){
           $(this).toggleClass('button-open');
           $menuWrap.toggleClass('menu-show');
+          $clse_main.toggleClass('pull-left');
         })
     });
   }
