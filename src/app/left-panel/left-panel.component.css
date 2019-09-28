@@ -67,6 +67,7 @@ header{
     top: 30px;
     position: absolute;
     margin-top: 140px;
+    left: .2em;
 }
 .menu-sidebar .menu {
     list-style: none;
@@ -88,7 +89,7 @@ header{
     text-decoration: none;
 }
 .menu-show {
-    margin-left: 0;
+    margin-left:0;
 }
 .menu-sidebar ul li a:hover{
     color: rgb(233, 233, 233);
