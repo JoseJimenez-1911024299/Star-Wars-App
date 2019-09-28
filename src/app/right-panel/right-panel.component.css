@@ -12,8 +12,8 @@
     height: 750px;
 }
 .carousel-control-prev{
-    position: absolute !important;
-    left: 0px;
+    position: absolute;
+    left: 50px;
     top: -100px;
     transition: 0.5s ease;
 }
@@ -30,7 +30,7 @@
 
 .carousel-control-next{
     position: absolute;
-    left: 1250px;
+    left: 1300px;
     top: -100px;
     transition: 0.5s ease;
 }
