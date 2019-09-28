@@ -60,7 +60,7 @@ display: flex;
 }
 .flex-container .flex-item{
     height: 100%;
-    width: 40%;
+    width: 81%;
     position: relative;
     z-index: 1;
     margin-left: 10px;
