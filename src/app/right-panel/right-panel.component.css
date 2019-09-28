@@ -47,53 +47,35 @@
     transform: rotateZ(360deg) translateY(165px) translateX(-240px);
 }
 
-.active{
-    width: 100% !important;
-    height: 550px;
-    transition: 0.5s ease;
-    border: 8.5px solid rgb(97, 97, 97) !important;
+.carousel-inner{
+    display: block !important;
+    overflow: visible!important;
 }
 .flex-container{
 display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-
+  overflow: hidden; 
 }
 .flex-container .flex-item{
-
-    height: 20rem;
-    width: 12rem;
+    height: 100%;
+    width: 40%;
     position: relative;
     z-index: 1;
-    -webkit-transform: scale(0.6) translateY(-2rem);
-    transform: scale(0.6) translateY(-2rem);
-    opacity: 0;
-    cursor: pointer;
-
+    margin-left: 10px;
+    transform: scaleX(0.9) scaleY(0.6);
     pointer-events: none;
     background: #2e5266;
-    background: linear-gradient(to top, #2e5266, #6e8898);
     transition: 1s;
-  
+    overflow: hidden;
+    opacity: 0.7;
+    border: 10px solid #fff;
 }
-.flex-item{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    height: 320px;
-    padding: 10px 20px;
-}
-
-.flex-container .flex-item:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  border-radius: 100%;
-  background-color: rgba(0,0,0,0.3);
-  bottom: -5rem;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
+.flex-item img{
+    height: 550px;
+    width: 100%;
+    transition: 1s ease;
 }
 .flex-container .flex-item.active {
   z-index: 3;
@@ -102,19 +84,7 @@ display: flex;
   opacity: 1;
   pointer-events: auto;
   transition: 1s;
-}
-.flex-container .flex-item.prev, .flex-container .flex-item.next {
-  z-index: 2;
-  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
-  transform: scale(0.8) translateY(-1rem) translateX(0);
-  opacity: 0.6;
-  pointer-events: auto;
-  transition: 1s;
-}
-
-.carousel-item img{
-    height: 480px;
-    width: 100% !important;
-    border: 8.5px solid rgb(255, 255, 255);
-    transition: 0.5s ease;
+  width: 100% !important;
+  transition: 0.5s ease;
+  border: 8.5px solid rgb(97, 97, 97) !important;
 }
