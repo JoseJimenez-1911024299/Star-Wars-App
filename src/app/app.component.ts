@@ -14,8 +14,7 @@ export class AppComponent implements OnInit {
   {
     $(document).ready(function(){
       var $toggle  = $('.menu-sable'),
-      $menuWrap = $('.menu-wrap'),
-
+      $menuWrap = $('.menu-wrap')
       $toggle.on('click',function(){
           $(this).toggleClass('button-open');
           $menuWrap.toggleClass('menu-show');

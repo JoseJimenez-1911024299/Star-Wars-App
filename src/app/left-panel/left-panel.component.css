@@ -50,7 +50,7 @@ header{
     height: 60px;
 }
 .button-open .sable_top {
-    transform: rotateZ(186deg)  translateX(-16px) translateY(-8px);
+    transform: rotateZ(186deg)  translateX(-15px) translateY(-20px);
     transition: .1s;
   }
 .button-open .sable_middle {
@@ -59,7 +59,7 @@ header{
     opacity: 0;
   }
  .button-open .sable_bottom {
-    transform: rotateZ(270deg) translateX(35px) translateY(13px);
+    transform: rotateZ(270deg) translateX(25px) translateY(15px);
     transition: .1s;
   }
 .menu-wrap {
