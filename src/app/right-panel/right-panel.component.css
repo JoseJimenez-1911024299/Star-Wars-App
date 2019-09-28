@@ -30,7 +30,7 @@
 
 .carousel-control-next{
     position: absolute;
-    left: 1335px;
+    left: 1250px;
     top: -100px;
     transition: 0.5s ease;
 }
@@ -47,28 +47,74 @@
     transform: rotateZ(360deg) translateY(165px) translateX(-240px);
 }
 
-
-.carousel-item{
-    overflow: visible !important;
-    display: flex !important;
-}
-
 .active{
-    width: 45% !important;
+    width: 100% !important;
     height: 550px;
     transition: 0.5s ease;
     border: 8.5px solid rgb(97, 97, 97) !important;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.flex-container{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+.flex-container .flex-item{
+
+    height: 20rem;
+    width: 12rem;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+
+    pointer-events: none;
+    background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898);
+    transition: 1s;
+  
+}
+.flex-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 320px;
+    padding: 10px 20px;
 }
 
-.flex img{
-    height: 410px;
-    width: 45% !important;
+.flex-container .flex-item:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.flex-container .flex-item.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+.flex-container .flex-item.prev, .flex-container .flex-item.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.carousel-item img{
+    height: 480px;
+    width: 100% !important;
     border: 8.5px solid rgb(255, 255, 255);
     transition: 0.5s ease;
-    margin-left: 15px;
 }
