@@ -25,5 +25,17 @@ h1,h2,h3,h4,h5,h6{
   position: relative;
   bottom: 0.6em;
   font-family: 'Star Jedi Rounded';
-  
+  .search-container{
+    padding:20px;
+
+}
+
+input[type=text] {
+    padding: 6px;
+    font-size: 15px;
+    font-family: 'Star Jedi Rounded';
+  }
+
+  .searchbtn{
+      
 }
