@@ -1,0 +1,20 @@
+.search-container{
+    padding:20px;
+
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px;
+    font-size: 15px;
+    font-family: 'Star Jedi Rounded';
+  }
+
+  .searchbtn{
+    border-radius: 8px;
+    width: 100%;
+    height: 20px;
+    font-size: 8px;
+    font-family: 'Star Jedi Rounded';
+
+  }
