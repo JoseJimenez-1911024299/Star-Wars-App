@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsComComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   ngOnInit() {
   }
