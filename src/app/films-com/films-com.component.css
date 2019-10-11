@@ -3,6 +3,9 @@
   height: 300px;
   perspective: 1000px;
 }
+.mstrar_mas{
+  cursor: pointer;
+}
 
 .flip-card-inner {
   position: relative;

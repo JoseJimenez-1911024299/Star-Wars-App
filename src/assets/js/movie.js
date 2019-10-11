@@ -1,24 +1,16 @@
 $(document).ready(function(){
+
     var $toggle  = $('.menu-sable'),
     $menuWrap = $('.menu-wrap')
+
     $toggle.on('click',function(){
         $(this).toggleClass('button-open');
         $menuWrap.toggleClass('menu-show');
-
-
-      })
-
-      $('#mstrar_mas').click(function(){
-        alert("sad");
-          $('.flip-card-inner').css({
-            "transform":"rotateY(180deg)"
-          });
-      })
+      });
 
       carousel();
 
   });
-
 carousel = function () {
     // Control buttons
     $('.next').click(function () {

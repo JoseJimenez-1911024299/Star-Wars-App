@@ -24,8 +24,8 @@ export class FilmsComComponent implements OnInit {
       },
       (error) => {
         console.error(error);
-      }
-    )
+      });
+
   }
 
 }
