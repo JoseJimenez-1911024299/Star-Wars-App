@@ -1,0 +1,79 @@
+
+.pull-left{
+  transition: 0.3s ease;
+  margin-left: 250PX;
+}
+.main{
+  padding-left: 15px;
+  transition: 0.3s ease;
+  width: 100%;
+}
+.main img{
+  width: 540px;
+  height: 750px;
+}
+
+.carousel-inner{
+position: relative;
+display: flex;
+height: 520px;
+justify-content: space-between;
+
+  }
+.flex-item{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transform: scaleX(0.7) scaleY(0.7);
+  transition: transform 0.2s ease-in-out;
+  opacity: 0.8;
+  border: 10px solid #fff;
+}
+.flex-item img{
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner .flex-item.active {
+z-index: 3;
+-webkit-transform: scale(1) translateY(0) translateX(0);
+transform: scale(1) translateY(0) translateX(0);
+transition: transform 0.2s ease-in-out;
+border: 8.5px solid rgb(97, 97, 97) !important;
+opacity: 1;
+}
+.carousel-control-prev{
+  position: absolute;
+  left: 50px;
+  top: -100px;
+  transition: 0.5s ease;
+}
+.carousel-control-prev img{
+  width: 160px;
+  height: 160px;
+}
+.prev-icon-1{
+  transform: rotateY(180deg) translateY(160px) translateX(161px);
+}
+.prev-icon-2{
+  transform: rotateZ(180deg) translateY(4px) translateX(320px);
+}
+
+.carousel-control-next{
+  position: absolute;
+  left: 1300px;
+  top: -100px;
+  transition: 0.5s ease;
+}
+
+.carousel-control-next img{
+  width: 160px;
+  height: 160px;
+}
+
+.next-icon-1{
+  transform: rotatex(180deg) translateY(0px) translateX(-80px);
+}
+.next-icon-2{
+  transform: rotateZ(360deg) translateY(165px) translateX(-240px);
+}
