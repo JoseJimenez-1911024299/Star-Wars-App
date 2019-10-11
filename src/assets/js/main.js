@@ -8,6 +8,13 @@ $(document).ready(function(){
 
       })
 
+      $('#mstrar_mas').click(function(){
+        alert("sad");
+          $('.flip-card-inner').css({
+            "transform":"rotateY(180deg)"
+          });
+      })
+
       carousel();
 
   });
@@ -33,7 +40,7 @@ carousel = function () {
       if (idx >= totalItems - (itemsPerSlide - 1)) {
         var it = itemsPerSlide - (totalItems - idx);
         for (var i = 0; i < it; i++) {
-          // append slides to end 
+          // append slides to end
           if (e.direction == "left") {
             $(
               ".flex-item").eq(i).appendTo(".carousel-inner");
