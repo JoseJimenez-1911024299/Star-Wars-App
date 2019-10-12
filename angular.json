@@ -28,7 +28,11 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/media_querys.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/js/movie.js"
+            ]
           },
           "configurations": {
             "production": {
