@@ -36,13 +36,13 @@
     transform: rotateZ(226deg);
 }
 header{
-    margin-left: 1em;
-    position: absolute;
-    left: 0.8em;
+    position: fixed;
     top: 0;
     bottom: 0;
-    width:350px;
     height: 100vh;
+    left: 0;
+    z-index: 99;
+    margin-left: 32px;
 }
 .menu-sable{
     cursor: pointer;
@@ -67,9 +67,9 @@ header{
     top: 0px;
     bottom: 0px;
     width: 350px;
-    margin-left:-480px;
     font-size: 2.5em;
     transition: .25s;
+    margin-left: -650px;
     background-color: rgba(104, 104, 104, 0.589);
 }
 .menu-sidebar{
@@ -98,10 +98,10 @@ header{
     text-decoration: none;
 }
 .menu-show {
-    margin-left:0;
+  margin-left:-35px;
 }
 .menu-sidebar ul li a:hover{
-    color: rgb(233, 233, 233);
+    color: rgb(216, 171, 171);
     transition: 0.5 ease;
 }
 .form-control{

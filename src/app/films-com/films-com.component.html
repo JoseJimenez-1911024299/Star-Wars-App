@@ -1,28 +1,32 @@
+<div class="left-container">
+    <div class="container-title">
+        <p class="subttile-app">colección de peliculas</p>
+     </div>  
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-lg-4 col-sm-3" *ngFor="let movie of movies">
+    <div class="col" *ngFor="let movie of movies">
+      <div class="main-container">
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="card">
-                    <h5 class="card-header">{{ movie.title}}</h5>
-
-                    <div class="card-body">
-                        <a class="btn btn-primary" role="button" data-mostrar="mas">Mostrar mas</a>
-                      </div>
+                    <img src="../../assets/img/1.png" alt="" class="card-img-top">
                 </div>
               </div>
               <div class="flip-card-back">
                   <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">{{ movie.title}}</h5>
+                      <p class="card-text text-justify">
+                          {{ movie.opening_crawl}}
+                      </p>
+                      <a href="#" class="btn btn-primary mstrar_mas">Mas Info+</a>
                     </div>
               </div>
             </div>
     </div>
   </div>
-
+</div>
   </div>
 </div>
 
+</div>

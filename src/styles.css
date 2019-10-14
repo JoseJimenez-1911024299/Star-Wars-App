@@ -1,59 +1,62 @@
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Star Jedi','San-serif';
+  font-weight: normal;
+  font-style: normal;
+}
+.container-title{
+  width: 90%;
+  margin: auto;
+  z-index: -1000;
+  margin-top: 1.2em;
+
+}
+
+.title-app{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 5.2em;
+}
+
+.subttile-app{
+  text-align: center;
+  color: rgb(218, 204, 4);
+  font-size: 2.85em;
+  position: relative;
+  bottom: 0.6em;
+  font-family: 'Star Jedi Rounded';
+  
+
+}
+
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-image:url('../src/assets/img/bg_star_wars.jpg') ;
+    background-image:url('assets/img/bg_star_wars.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  h1,h2,h3,h4,h5,h6{
-    font-family: 'Star Jedi','San-serif';
-    font-weight: normal;
-    font-style: normal;
-  }
-  .container-title{
-    width: 90%;
-    margin: auto;
-    z-index: -1000;
-    margin-top: 1.2em;
-
-  }
-
-  .title-app{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 5.2em;
-  }
-
-  .subttile-app{
-    text-align: center;
-    color: rgb(218, 204, 4);
-    font-size: 2.85em;
-    position: relative;
-    bottom: 0.6em;
-    font-family: 'Star Jedi Rounded';
-
-
+    background-attachment: fixed;
   }
 
   @font-face {
     font-family: 'Star Jedi';
-    src: url('../src/assets/fonts/StarJedi.woff2') format('woff2'),
-        url('../src/assets/fonts/StarJedi.woff') format('woff');
+    src: url('assets/fonts/StarJedi.woff2') format('woff2'),
+        url('assets/fonts/StarJedi.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Star Jedi Rounded';
-    src: url('../src/assets/fonts/StarJediRounded.woff2') format('woff2'),
-        url('../src/assets/fonts/StarJediRounded.woff') format('woff');
+    src: url('assets/fonts/StarJediRounded.woff2') format('woff2'),
+        url('assets/fonts/StarJediRounded.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Star Jedi Hollow';
-    src: url('../src/assets/fonts/StarJediHollow.woff2') format('woff2'),
-        url('../src/assets/fonts/StarJediHollow.woff') format('woff');
+    src: url('assets/fonts/StarJediHollow.woff2') format('woff2'),
+        url('assets/fonts/StarJediHollow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

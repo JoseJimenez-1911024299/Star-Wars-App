@@ -8,6 +8,7 @@ import { SearchbarComComponent } from './searchbar-com/searchbar-com.component';
 import { FilmsComComponent } from './films-com/films-com.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
+import { FilmsItemComponent } from './films-item/films-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MainComponent } from './main/main.component';
     LeftPanelComponent,
     SearchbarComComponent,
     FilmsComComponent,
-    MainComponent
+    MainComponent,
+    FilmsItemComponent
   ],
   imports: [
     BrowserModule,

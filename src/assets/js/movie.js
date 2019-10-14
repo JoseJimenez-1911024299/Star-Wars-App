@@ -1,18 +1,14 @@
 $(document).ready(function(){
     var $toggle  = $('.menu-sable'),
-    $menuWrap = $('.menu-wrap'),
-    $ms = $('.mstrar_mas')
+    $menuWrap = $('.menu-wrap')
 
     $toggle.on('click',function(){
         $(this).toggleClass('button-open');
         $menuWrap.toggleClass('menu-show');
       });
-      $ms.click(function () {
-        console.log($(this).data('mostrar'));
-      });
       carousel();
-
   });
+
 carousel = function () {
     // Control buttons
     $('.next').click(function () {
