@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { FilmsServiceService } from './films-service.service';
 
 
 @Component({
@@ -12,23 +12,13 @@ export class FilmsComComponent implements OnInit {
   filmsUrl = 'https://swapi.co/api/films';
   // items = [];
   movies: any[] = [];
- 
-  constructor(private http: HttpClient) { }
+
+  constructor(private films:FilmsServiceService) { }
 
   getFilms(){
-    return this.http.get(this.filmsUrl);
+    return this.films.getFilms();
   }
 
-  
- public ngOnInit()
-  {
-      this.getFilms().subscribe(
-      (data) => {
-        this.movies = data['results'];
-      },
-      (error) => {
-        console.error(error);
-      });
-  }
+ public ngOnInit()  {  }
 
 }
