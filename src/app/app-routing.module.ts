@@ -8,7 +8,6 @@ import { FilmsItemComponent } from './films-item/films-item.component';
 const routes: Routes = [
 {path: 'pelicula', component: FilmsComComponent },
 {path: '', component: MainComponent },
-{path: '**', component: MainComponent },
 {path: 'Inicio', component: MainComponent },
 {path: 'pelicula/:id', component: FilmsItemComponent}
 ];

@@ -10,7 +10,6 @@ import { retry, catchError } from 'rxjs/operators';
 export class FilmsServiceService {
   apisUrl = 'https://swapi.co/api/';
   // items = [];
-  movies: any[] = [];
   constructor(private http: HttpClient) {
 
    }
@@ -22,7 +21,13 @@ export class FilmsServiceService {
    }
 
    getFilms(): Observable<Films> {
-    return this.http.get<Films>(this.apisUrl + '/films')
+    return this.http.get<Films>(this.apisUrl + 'films').pipe(
+      retry(1),
+      catchError(this.handleError)
+    )}
+
+   getFilmsid(id): Observable<Films> {
+    return this.http.get<Films>(this.apisUrl + 'films/'+id+'/')
     .pipe(
       retry(1),
       catchError(this.handleError)

@@ -6,8 +6,8 @@ export class Films {
   producer: string;
   release_date: Date;
   species: Array<string>;
-  starships: Array<string>;
-  vehicles: Array<string>;
+  starships: Array<string> ;
+  vehicles: Array<string> ;
   characters: Array<string>;
   planets: Array<string>;
   url: string;
