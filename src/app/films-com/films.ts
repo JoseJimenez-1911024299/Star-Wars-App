@@ -1,16 +1,16 @@
 export class Films {
-  title           :String;
-  episode_id      :int;
-  opening_crawl   :String;
-  director        :String;
-  producer        :String;
-  release_date    :date;
-  species         :array;
-  starships       :array;
-  vehicles        :array;
-  characters      :array;
-  planets         :array;
-  url             :String;
-  created         :String;
-  edited 			:String;
+  title: string;
+  episode_id: number;
+  opening_crawl: string;
+  director: string;
+  producer: string;
+  release_date: Date;
+  species: Array<string>;
+  starships: Array<string> ;
+  vehicles: Array<string> ;
+  characters: Array<string>;
+  planets: Array<string>;
+  url: string;
+  created: string;
+  edited: string;
 }

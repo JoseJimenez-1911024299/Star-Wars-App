@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmsServiceService } from './films-service.service';
-
+import { Films } from './films';
 
 @Component({
   selector: 'app-films-com',
@@ -8,17 +8,21 @@ import { FilmsServiceService } from './films-service.service';
   styleUrls: ['./films-com.component.css']
 })
 export class FilmsComComponent implements OnInit {
-  // Swapi url & empty obj tu push response
-  filmsUrl = 'https://swapi.co/api/films';
-  // items = [];
+
   movies: any[] = [];
 
-  constructor(private films:FilmsServiceService) { }
+  constructor(public films: FilmsServiceService) { }
 
-  getFilms(){
-    return this.films.getFilms();
-  }
+ public ngOnInit()  {
 
- public ngOnInit()  {  }
+    this.CargarPeliculas();
+
+   }
+
+   CargarPeliculas() {
+    return this.films.getFilms().subscribe((data: {}) =>{
+      this.movies = data['results'];
+    })
+   }
 
 }
