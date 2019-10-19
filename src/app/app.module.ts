@@ -9,6 +9,7 @@ import { FilmsComComponent } from './films-com/films-com.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
 import { FilmsItemComponent } from './films-item/films-item.component';
+import { PeopleComComponent } from './people-com/people-com.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilmsItemComponent } from './films-item/films-item.component';
     SearchbarComComponent,
     FilmsComComponent,
     MainComponent,
-    FilmsItemComponent
+    FilmsItemComponent,
+    PeopleComComponent
   ],
   imports: [
     BrowserModule,
